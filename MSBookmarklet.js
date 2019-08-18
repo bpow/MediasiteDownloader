@@ -90,7 +90,7 @@ javascript: (function () {
 
         var allMediaPresenter = playerOpts.d.Presentation.Streams[1].VideoUrls;
         for (var i = 0; i < allMediaPresenter.length; i++) {
-          if (allMediaPresenter[i].MediaType == 'MP4') {
+          if (allMediaPresenter[i].MediaType == 'MP4' && allMediaPresenter[i].MimeType == 'video/mp4') {
             var presenterMp4Url = allMediaPresenter[i].Location;
           }
         }
